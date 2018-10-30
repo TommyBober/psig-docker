@@ -7,4 +7,4 @@ ENV MYSQL_ROOT_PASSWORD="ciaomare"
 EXPOSE 3000
 COPY . /home
 
-CMD ["nodejs", "/home/server.js"]
+CMD ["/bin/bash"]
