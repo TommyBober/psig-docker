@@ -1,0 +1,23 @@
+{
+  "name": "psig-docker",
+  "version": "1.0.0",
+  "description": "## Istruzioni 1. Installare Docker (https://www.docker.com/products/docker-desktop) 2. Avviare Docker 3. <b>All'interno di questa cartella</b> lanciare il comando `docker build .`. Questo comando genera l'immagine del container utilizzando le direttive scritte nel Dockerfile. Quando questa operazione si conclude ricercare nei log che appaiono sul terminale l'hash dell'immagine. (es `Successfully built 702fb0b7837f`, qui l'hash è `702fb0b7837f`) 4. Avviare un container a partire da quell'immagine utilizzando il comando `docker run --name <nome-che-si-vuole-dare-al-container> -it <hash-copiato-prima>` 5. Alla fine il container può essere cancellato utilizzando il comando `docker rm <nome-dato-al-container>`",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scientifico5F/psig-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scientifico5F/psig-docker/issues"
+  },
+  "homepage": "https://github.com/scientifico5F/psig-docker#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
